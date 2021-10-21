@@ -1,0 +1,11 @@
+INSERT INTO ALUMNO VALUES
+(11111,'Elena Patricia',16,'1111111111','Centro Pinal',''),
+(22222,'Rosa Bibiana',17,'2222222222','Las Favelas de Pinal',107),
+(33333,'Jose Yael',16,'3333333333','Agua Amarga',109),
+(44444,'Karina Citlalli',18,'4444444444','El Derramadero',103),
+(55555,'Areli Betsabé',17,'5555555555','El Derramadero',105),
+(66666,'Jose Yaadel',15,'6666666666','Centro Pinal',100),
+(77777,'Walter Leonel',18,'7777777777','La Bondojito',101),
+(88888,'Aljeandro Johan',15,'8888888888','Curva Colorada',107),
+(99999,'Oswaldo',19,'9999999999','Agua Amarga',100),
+(11100,'Jhonathan Alvarez',19,'1111100000','Barrio Piedra Grande',102)
