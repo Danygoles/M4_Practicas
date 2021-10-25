@@ -1,0 +1,47 @@
+/* Creando y usando la BD */
+CREATE DATABASE BD_concultas
+USE BD_consultas
+/* Creando las tablas y sus campos */
+CREATE TABLE ALUMNO
+(
+	Matricula_al INT(5),
+	Nombre_al CHAR(50),
+	Edad_al INT(2),
+	Telefono CHAR(10),
+	Direccion VARCHAR(50),
+	Cod_c1 INT(3),
+	PRIMARY KEY (Matricula_al),
+	FOREIGN KEY (Cod_c1) REFERENCES CARRERA(Cod_c)
+)
+CREATE TABLE CARRERA
+(
+	Cod_c INT(3),
+	Nombre_c CHAR(20),
+	Duracion_c FLOAT(3),
+	PRIMARY KEY (Cod_c)
+)
+/* Introduciendo los datos de la tabla independiente CARRERA */
+INSERT INTO carrera VALUES
+(100,'Programación',3),
+(101,'Procesos de Gestón Administrativa',3),
+(102,'Informatica',3.5),
+(103,'Bases de Ingeniería',4),
+(104,'Mantenimiento',2.5),
+(105,'Administración',2),
+(106,'Mecatrónica',3.5),
+(107,'Mecánica',4.5),
+(108,'Industrial',3.5),
+(109,'Sistemas Computacionales',4.5)
+/* Introduciendo los datos de la tabla dependiente ALUMNO */
+INSERT INTO alumno VALUES
+(11111,'Elena Patricia',16,'1111111111','Centro Pinal',103),
+(22222,'Rosa Bibiana',17,'2222222222','Las Favelas de Pinal',107),
+(33333,'Jose Yael',16,'3333333333','Agua Amarga',109),
+(44444,'Karina Citlalli',18,'4444444444','El Derramadero',103),
+(55555,'Areli Betsabé',17,'5555555555','El Derramadero',105),
+(66666,'Jose Yaadel',15,'6666666666','Centro Pinal',100),
+(77777,'Walter Leonel',18,'7777777777','La Bondojito',101),
+(88888,'Aljeandro Johan',15,'8888888888','Curva Colorada',107),
+(99999,'Oswaldo',19,'9999999999','Agua Amarga',100),
+(11100,'Jhonathan Alvarez',19,'1111100000','Barrio Piedra Grande',102)
+/* Comenzando a realizar las consultas (QUERYs) para obtener datos */
